@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>jQuery Dropdown example</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+	nav li{
+		float:left;
+		padding:2px 5px;
+		list-style:none;
+		position:relative;
+	}
+	nav li ul {
+		position:absolute;
+		top:15px;
+		left:0;
+		padding:0;
+	}
+	nav li ul li{
+		clear:both;
+	}
+	</style>
+	<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="jquery.dropdown.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('nav ul').dropdown({effect_in: 'fadeIn'})
+		})
+	</script>
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+
+    </header>
+	<nav>
+		<ul>
+			<li>
+				<a href="#">Main element 1</a>
+				<ul>
+					<li>Sub element 1</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Main element 2</a>
+				<ul>
+					<li>Sub element 2</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<div class="clear"></div>
+    <div id="main" role="main">		
+		
+    </div>
+	<div class="clear"></div>
+	<footer>
+		
+    </footer>    
+  </div>
+  
+</body>
+</html>
